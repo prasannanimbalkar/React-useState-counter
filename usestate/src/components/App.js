@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import Object from './objects'
 
 const countInitial = () => {
     return 2
@@ -25,6 +26,7 @@ const App = () => {
             <button onClick={decrementCount}>-</button>
             <span>{count}</span>
             <button onClick={incrementCount}>+</button>
+            <Object />
         </>
     )
 }
