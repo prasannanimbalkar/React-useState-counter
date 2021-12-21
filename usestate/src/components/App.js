@@ -1,8 +1,14 @@
 import React, {useState} from 'react'
 
+const countInitial = () => {
+    return 2
+}
+
 const App = () => {
+    //normal use state
     //const [state, function] = useState( defaultValue );
-    const [count, setCount] = useState(4);
+    //function useState
+    const [count, setCount] = useState(() => countInitial());
 
     const decrementCount = () => {
         setCount( count - 1 );
