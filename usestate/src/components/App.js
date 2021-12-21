@@ -1,7 +1,7 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 const App = () => {
-    //has [state and function]
+    //const [state, function] = useState( defaultValue );
     const [count, setCount] = useState(4);
 
     return (
