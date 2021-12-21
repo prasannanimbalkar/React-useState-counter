@@ -9,7 +9,9 @@ const App = () => {
     }
 
     const incrementCount = () => {
-        setCount( count + 1 );
+        // setCount( count + 1 );
+        //always use function version for setting state
+        setCount( prevCount => prevCount + 1 );
     }
 
     return (
