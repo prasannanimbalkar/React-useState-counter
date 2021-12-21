@@ -1,10 +1,15 @@
 import React from 'react'
 
 const App = () => {
+    //has [state and function]
+    const [count, setCount] = useState(4);
+
     return (
-        <div>
-            
-        </div>
+        <>
+            <button>-</button>
+            <span>{count}</span>
+            <button>+</button>
+        </>
     )
 }
 
